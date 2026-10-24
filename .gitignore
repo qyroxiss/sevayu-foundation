@@ -1,0 +1,18 @@
+# Local tooling and design-review output
+.claude/
+.impeccable/
+.taste-skill/
+
+# Client's raw originals (the site uses the optimised copies in img/)
+assets/
+
+# Large originals and unused variants not referenced by the site
+img/kund.jpg
+img/ration-kit.jpg
+img/ration-kit-480.jpg
+img/favicon-32.png
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
