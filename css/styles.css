@@ -79,7 +79,7 @@ a { color: inherit; }
 
 /* ---------- header ---------- */
 .top { position: fixed; inset: 0 0 auto 0; z-index: 40; height: var(--head-h); color: #fff; transition: background-color 260ms ease, color 260ms ease, box-shadow 260ms ease; }
-.top.is-solid { background: rgba(255, 255, 255, 0.97); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
+.top.is-solid { background: var(--white); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
 .top-inner { height: 100%; display: flex; align-items: center; gap: 28px; }
 .brand { display: flex; align-items: center; gap: 12px; margin-right: auto; text-decoration: none; }
 .brand-mark { width: 40px; height: 40px; border-radius: 10px; }
@@ -94,13 +94,10 @@ a { color: inherit; }
 .top-donate { min-height: 44px; padding: 0 22px; }
 @media (max-width: 960px) { .top-links { display: none; } }
 @media (max-width: 820px) {
-  .top { background: rgba(255, 255, 255, 0.97); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
+  .top { background: var(--white); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
   .top .brand-name { color: var(--maroon-deep); }
   .top .brand-name em { color: var(--marigold-deep); }
   .hero { padding-top: var(--head-h); }
-  .seg { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; }
-  .seg::-webkit-scrollbar { display: none; }
-  .seg-btn { flex: none; }
 }
 @media (max-width: 420px) { .brand-name { font-size: 20px; } }
 
@@ -179,6 +176,12 @@ a { color: inherit; }
 .seva { background: var(--stone); }
 .seg { display: flex; flex-wrap: wrap; gap: 4px; padding: 5px; background: var(--white); border-radius: 999px; box-shadow: 0 0 0 1px var(--line); }
 .seg-btn { min-height: 40px; padding: 0 18px; border-radius: 999px; font-weight: 600; font-size: 15px; color: var(--muted); transition: background-color 180ms ease, color 180ms ease, transform 140ms var(--ease); }
+/* phones: one swipeable row, never a second line (kept after the base rules so it wins) */
+@media (max-width: 820px) {
+  .seg { flex-wrap: nowrap; width: 100%; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .seg::-webkit-scrollbar { display: none; }
+  .seg-btn { flex: none; white-space: nowrap; padding: 0 16px; }
+}
 .seg-btn:hover { color: var(--maroon); }
 .seg-btn:active { transform: scale(0.96); }
 .seg-btn.is-on { background: var(--maroon); color: #fff; }
