@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sevayu Foundation · Make Someone Happy</title>
-  <meta name="description" content="Sevayu Foundation serves the residents of Vraja with food, healthcare, education and daily support. Give a seva and make someone happy.">
+  <meta name="description" content="Sevayu Foundation serves Vrindavan Brajdham through its old age home, rehabilitation home, widow care, gau seva, prasadam, medical help, safe drinking water and a green and clean Vrindavan. Give a seva and make someone happy.">
   <meta name="theme-color" content="#3a0d0c">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -24,6 +24,26 @@
 </head>
 <body>
 
+<!-- drawings shared by the cards and the activities -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cow" viewBox="0 0 120 90">
+    <path d="M42 22c-7-2-10-8-10-15M78 22c7-2 10-8 10-15" fill="none" stroke="#e9a43a" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="33" cy="30" rx="11" ry="5.5" transform="rotate(-18 33 30)" fill="#fff"/>
+    <ellipse cx="87" cy="30" rx="11" ry="5.5" transform="rotate(18 87 30)" fill="#fff"/>
+    <path d="M44 19h32c3 0 5 2 5 5l-3 30H42l-3-30c0-3 2-5 5-5z" fill="#fff"/>
+    <rect x="42" y="48" width="36" height="22" rx="11" fill="#f0c3a8"/>
+    <circle cx="53" cy="59" r="2.4" fill="#7a1416"/><circle cx="67" cy="59" r="2.4" fill="#7a1416"/>
+    <circle cx="50" cy="35" r="2.8" fill="#3a0d0c"/><circle cx="70" cy="35" r="2.8" fill="#3a0d0c"/>
+    <path d="M60 23v11" stroke="#e9a43a" stroke-width="3" stroke-linecap="round"/><circle cx="60" cy="38" r="2" fill="#7a1416"/>
+  </symbol>
+  <symbol id="rehab" viewBox="0 0 120 120">
+    <path d="M22 60 60 30l38 30" fill="none" stroke="#7a1416" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="32" y="56" width="56" height="38" rx="5" fill="#7a1416"/>
+    <path d="M60 86s-12-7-12-15a6.5 6.5 0 0 1 12-3.5A6.5 6.5 0 0 1 72 71c0 8-12 15-12 15z" fill="#e9a43a"/>
+    <path d="M14 98c12 0 20 10 46 10s34-10 46-10" fill="none" stroke="#2f5d46" stroke-width="7" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
 
 <!-- ============ HEADER ============ -->
@@ -34,8 +54,9 @@
       <span class="brand-name">Sevayu <em>Foundation</em></span>
     </a>
     <nav class="top-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
       <a href="#seva">Give a seva</a>
-      <a href="#impact">Our seva</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#questions">FAQ</a>
       <a href="#contact">Contact</a>
@@ -53,12 +74,12 @@
     <span class="rep rep-hero">Representative image</span>
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="hero-kicker">Sevayu Foundation · Vraja</p>
+        <p class="hero-kicker">Sevayu Foundation · Vrindavan Brajdham</p>
         <h1 class="hero-title" id="hero-title">
           <span class="ht-1">Make someone</span>
           <span class="ht-2">happy<svg class="swash" viewBox="0 0 300 30" aria-hidden="true"><path d="M6 20C70 8 150 6 294 14" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M40 26C110 18 190 17 260 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".7"/></svg></span>
         </h1>
-        <p class="hero-sub">Seva for the Vrajavāsīs: food, healthcare, education and daily support.</p>
+        <p class="hero-sub">Seva in the land of Lord Krishna: a home for elders and widows, care for cows, prasadam, medicine and clean water.</p>
         <div class="hero-actions">
           <a class="btn btn-marigold btn-lg" href="#seva">Give a seva</a>
           <button class="btn btn-line btn-lg film" type="button" data-film="img/food-van.mp4" data-caption="Prasadam served from the Sevayu food van to Vrajavāsīs">
@@ -70,13 +91,12 @@
     </div>
   </section>
 
-  <!-- ============ SEVA PILLARS (overlaps the hero's lower edge) ============ -->
+  <!-- ============ GUIDING PRINCIPLE (overlaps the hero's lower edge) ============ -->
   <div class="wrap pillars-wrap">
-    <ul class="hero-points" role="list" aria-label="What your seva supports">
-      <li><span class="pt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 0 1-18 0zm4-2c0-2 1-3 2-4m2 4c0-3 2-4 2-6m2 6c0-2 1-3 2-4"/></svg></span><div><strong>Prasadam for Vrajavāsīs</strong><span>Hot meals from our food van</span></div></li>
-      <li><span class="pt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span><div><strong>Medicines for elders</strong><span>Care for widows and the elderly</span></div></li>
-      <li><span class="pt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h7a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H3zm18 0h-7a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h7z"/></svg></span><div><strong>Education for children</strong><span>School kits for every child</span></div></li>
-      <li><span class="pt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></span><div><strong>Clean drinking water</strong><span>Safe water points in Vraja</span></div></li>
+    <ul class="hero-points" role="list" aria-label="Our guiding principle: jīve doyā, nāme ruchi, vaiṣṇava-sevā">
+      <li><span class="pt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span><div><strong lang="sa-Latn">Jīve doyā</strong><span>Mercy to all living beings</span></div></li>
+      <li><span class="pt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 14h18c0 3.3-4 6-9 6s-9-2.7-9-6zM12 3c2.2 2.6 2.2 5 0 7-2.2-2-2.2-4.4 0-7z"/></svg></span><div><strong lang="sa-Latn">Nāme ruchi</strong><span>Taste for the holy name</span></div></li>
+      <li><span class="pt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11h18a9 9 0 0 1-18 0zm4-2c0-2 1-3 2-4m2 4c0-3 2-4 2-6m2 6c0-2 1-3 2-4"/></svg></span><div><strong lang="sa-Latn">Vaiṣṇava-sevā</strong><span>Service to the Vaiṣṇavas</span></div></li>
     </ul>
   </div>
 
@@ -103,6 +123,142 @@
     </div>
   </section>
 
+  <!-- ============ ABOUT ============ -->
+  <section class="sec about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-mission">
+          <p class="eyebrow">Our mission</p>
+          <h2 class="h2" id="about-title">Selfless <em>service</em></h2>
+          <p class="lead">Sevayu Foundation is dedicated to selfless service, aiming to uplift society through education, healthcare, food distribution, and spiritual welfare. Guided by compassion, we strive to <strong>make someone happy</strong> by bringing relief, dignity, and hope to those in need.</p>
+        </div>
+        <blockquote class="about-vision">
+          <p class="eyebrow">Our vision</p>
+          <p class="vision-text">“To nurture a world guided by compassion for all living beings (<span lang="sa-Latn">Jīve Dāya</span>), practicing selfless, heartfelt service (<span lang="sa-Latn">Vaiṣṇava Seva</span>). We aim to bring joy, dignity, and hope to every life we touch, fostering a society where love, empathy, and spiritual values guide every action.”</p>
+        </blockquote>
+      </div>
+      <figure class="np-photo">
+        <img src="img/vraja-1920.jpg" srcset="img/vraja-960.jpg 960w, img/vraja-1920.jpg 1920w" sizes="(max-width: 1340px) 100vw, 1240px" width="1920" height="788" loading="lazy" alt="A red sandstone chhatri reflected in the still water of a kund in Vraja">
+        <figcaption>Vrindavan Brajdham, the land of Lord Krishna</figcaption>
+      </figure>
+      <h3 class="values-title">Core <em>values</em></h3>
+      <ul class="principles" role="list">
+        <li><strong>Compassion <span lang="sa-Latn">(Dāya)</span></strong><span>Treat every living being with kindness and empathy, recognizing the sanctity of all life.</span></li>
+        <li><strong>Selfless service <span lang="sa-Latn">(Sevā)</span></strong><span>Serve others with sincerity and devotion, without expectation of reward.</span></li>
+        <li><strong>Integrity and transparency</strong><span>Uphold honesty, ethical conduct, and accountability in all actions.</span></li>
+        <li><strong>Joyful giving <span lang="sa-Latn">(Ananda in Seva)</span></strong><span>Spread happiness through every act of service, inspiring hope and positivity.</span></li>
+        <li><strong>Spiritual inspiration</strong><span>Base all initiatives on timeless spiritual principles, fostering inner growth along with social welfare.</span></li>
+        <li class="np-card"><strong>Non profit</strong><span>Sevayu Foundation is a non-profit, charitable organisation dedicated solely to the service of society. Every contribution received is directly utilised for welfare projects.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ACTIVITIES ============ -->
+  <section class="sec activities" id="activities" aria-labelledby="act-title">
+    <div class="wrap">
+      <div class="act-head">
+        <h2 class="h2" id="act-title">Our <em>activities</em></h2>
+        <p class="lead">Sevayu Foundation is committed to serving the residents of Vraja through food, healthcare, education, and daily support. Each act of service to Vrajavāsīs is an offering to Śrī Kṛṣṇa, bringing joy and dignity to His sacred land.</p>
+      </div>
+      <div class="act-layout">
+        <div class="act-tabs" role="tablist" aria-label="Our activities" aria-orientation="vertical" hidden>
+          <button type="button" role="tab" class="act-tab" id="tab-oldage" aria-controls="act-oldage"><span class="n">01</span>Old age home</button>
+          <button type="button" role="tab" class="act-tab" id="tab-rehab" aria-controls="act-rehab"><span class="n">02</span>Rehabilitation home</button>
+          <button type="button" role="tab" class="act-tab" id="tab-widows" aria-controls="act-widows"><span class="n">03</span>Widow care</button>
+          <button type="button" role="tab" class="act-tab" id="tab-green" aria-controls="act-green"><span class="n">04</span>Green and clean Vrindavan</button>
+          <button type="button" role="tab" class="act-tab" id="tab-goseva" aria-controls="act-goseva"><span class="n">05</span>Gosevā &amp; Ahimsā milk</button>
+          <button type="button" role="tab" class="act-tab" id="tab-prasadam" aria-controls="act-prasadam"><span class="n">06</span>Prasadam distribution</button>
+          <button type="button" role="tab" class="act-tab" id="tab-calamity" aria-controls="act-calamity"><span class="n">07</span>Support during calamities</button>
+          <button type="button" role="tab" class="act-tab" id="tab-medical" aria-controls="act-medical"><span class="n">08</span>Medical assistance</button>
+          <button type="button" role="tab" class="act-tab" id="tab-water" aria-controls="act-water"><span class="n">09</span>Safe drinking water</button>
+        </div>
+        <div class="act-panels">
+          <article class="act-panel" id="act-oldage" role="tabpanel" aria-labelledby="tab-oldage">
+            <div class="arch act-img"><img src="img/act-oldage.webp" width="1024" height="1024" loading="lazy" alt="The gateway and garden courtyard of the Sevayu Foundation home for the aged"></div>
+            <div class="act-text">
+              <p class="act-num">01</p>
+              <h3>Old age home</h3>
+              <p>Sevayu Foundation facilitates a serene and loving Home for the Aged and Retired in the sacred town of Vrindavan Brajdham, offering elderly individuals a peaceful and spiritually enriched environment. Surrounded by the divine atmosphere of Lord Krishna’s land, the foundation provides not just physical care, but also emotional and spiritual support. Residents are offered comfortable accommodations, medical attention, and the opportunity to engage in daily prayers, bhajans, and satsangs, helping them live their golden years with dignity, devotion, and inner peace.</p>
+              <a class="btn btn-marigold" href="#seva" data-give="care">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-rehab" role="tabpanel" aria-labelledby="tab-rehab">
+            <div class="arch act-img act-art" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#rehab"/></svg></div>
+            <div class="act-text">
+              <p class="act-num">02</p>
+              <h3>Rehabilitation home</h3>
+              <p>Sevayu Foundation facilitates a dedicated Rehabilitation Home in Vrindavan &amp; Brajdham for the blind, those affected by leprosy, and individuals with mental disabilities. Rooted in compassion and service, the foundation provides shelter, medical care, and emotional support to some of the most vulnerable members of society. In the spiritually uplifting atmosphere of Brajdham, residents are treated with dignity and love, helping them regain a sense of belonging and purpose. Sevayu Foundation’s mission is to ensure that no one is forgotten, offering hope and healing in the divine land of Lord Krishna.</p>
+              <a class="btn btn-marigold" href="#seva" data-give="care">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-widows" role="tabpanel" aria-labelledby="tab-widows">
+            <div class="arch act-img"><img src="img/act-widows.webp" width="1200" height="686" loading="lazy" alt="Widows in white saris singing bhajans together with a dholak"></div>
+            <div class="act-text">
+              <p class="act-num">03</p>
+              <h3>Widow care</h3>
+              <p>Sevayu Foundation facilitates a compassionate Home for Widows in the holy town of Vrindavan Brajdham, offering shelter, care, and dignity to women who have been abandoned or left alone. In a place revered for its spiritual significance, the foundation provides a safe and peaceful environment where widows can find solace, community, and purpose. Along with basic necessities and healthcare, the home encourages participation in devotional activities like bhajans, kirtans, and satsangs, helping the women heal emotionally and spiritually while living their remaining years with respect and inner peace.</p>
+              <a class="btn btn-marigold" href="#seva" data-give="care">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-green" role="tabpanel" aria-labelledby="tab-green">
+            <div class="arch act-img"><img src="img/act-green.webp" width="1024" height="1024" loading="lazy" alt="Volunteers in Sevayu Foundation T-shirts clearing plastic waste from a street"></div>
+            <div class="act-text">
+              <p class="act-num">04</p>
+              <h3>Green and clean Vrindavan</h3>
+              <p>Sevayu Foundation is dedicated to keeping Vrindavan and Brajdham green, clean, and spiritually vibrant. Through tree planting and maintenance, cleanliness drives across streets, kundas, and ghats, and environmental awareness programs, we engage the community and devotees in preserving the sanctity of this holy land. By promoting sustainable practices, Sevayu Foundation strives to maintain Vrindavan as a serene and pure place for devotion and spiritual growth, honoring its legacy as the beloved land of Lord Krishna.</p>
+              <a class="btn btn-marigold" href="#seva" data-give="vraja">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-goseva" role="tabpanel" aria-labelledby="tab-goseva">
+            <div class="arch act-img"><img src="img/act-goseva.webp" width="1024" height="1024" loading="lazy" alt="Cows resting and feeding under the shade of a goshala shed"></div>
+            <div class="act-text">
+              <p class="act-num">05</p>
+              <h3>Gosevā &amp; Ahimsā milk</h3>
+              <p>At Sevayu Foundation, we honor the sacred tradition of Gosevā: caring for cows and bulls with love and devotion, including those living on the streets. Our Ahimsā Milk initiative provides pure, cruelty-free milk, ensuring the welfare of all bovines while offering nourishing, ethical products to society. Through this, we embody compassion for all living beings (<span lang="sa-Latn">Jīve Dāya</span>) and the spirit of selfless service to all jīvas (<span lang="sa-Latn">Jīva Seva</span>).</p>
+              <a class="btn btn-marigold" href="#seva" data-give="gau">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-prasadam" role="tabpanel" aria-labelledby="tab-prasadam">
+            <div class="arch act-img"><img src="img/pf-widows-meal.webp" width="1024" height="1024" loading="lazy" alt="Elderly women in white saris sitting in a temple courtyard with plates of prasadam"></div>
+            <div class="act-text">
+              <p class="act-num">06</p>
+              <h3>Prasadam distribution</h3>
+              <p>Sevayu Foundation strives to nourish both body and soul. Through our Prasadam distribution, we share the sanctified joy of devotional food with communities, spreading love and spiritual connection. Alongside this, our monthly groceries program provides essential provisions to underprivileged families, ensuring sustenance, dignity, and hope in their daily lives. Every act reflects our commitment to compassion (<span lang="sa-Latn">Jīve Dāya</span>) and selfless Vaishnava service (<span lang="sa-Latn">Vaishnava Seva</span>).</p>
+              <a class="btn btn-marigold" href="#seva" data-give="food">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-calamity" role="tabpanel" aria-labelledby="tab-calamity">
+            <div class="arch act-img"><img src="img/ration-table.jpg" width="1000" height="600" loading="lazy" alt="Rice, atta, dal and oil laid out to be packed for families in need"></div>
+            <div class="act-text">
+              <p class="act-num">07</p>
+              <h3>Support during calamities</h3>
+              <p>Sevayu Foundation stands ready to support communities during natural challenges, providing relief and care during floods, extreme summers, and harsh winters. Through timely distribution of food, water, clothing, and emergency aid, we ensure the safety and well-being of affected families. Our efforts reflect our commitment to compassion (<span lang="sa-Latn">Jīve Dāya</span>) and selfless service in times of crisis.</p>
+              <a class="btn btn-marigold" href="#seva" data-give="vraja">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-medical" role="tabpanel" aria-labelledby="tab-medical">
+            <div class="arch act-img"><img src="img/act-medical.webp" width="1024" height="1024" loading="lazy" alt="A doctor holding the hand of an elderly woman during a check-up, with an elderly man beside her"></div>
+            <div class="act-text">
+              <p class="act-num">08</p>
+              <h3>Medical assistance</h3>
+              <p>Sevayu Foundation provides basic medical assistance to the poor and needy with the generous support of devoted doctors and hospitals. From routine health check-ups to essential medicines and care, we strive to ensure that everyone has access to proper healthcare, reflecting our commitment to compassion (<span lang="sa-Latn">Jīve Dāya</span>) and selfless service (<span lang="sa-Latn">Vaishnava Seva</span>).</p>
+              <a class="btn btn-marigold" href="#seva" data-give="health">Give to this seva</a>
+            </div>
+          </article>
+          <article class="act-panel" id="act-water" role="tabpanel" aria-labelledby="tab-water">
+            <div class="arch act-img"><img src="img/act-water.webp" width="1024" height="1024" loading="lazy" alt="Women filling cans at a Sevayu Foundation drinking-water kiosk"></div>
+            <div class="act-text">
+              <p class="act-num">09</p>
+              <h3>Safe drinking water</h3>
+              <p>Sevayu Foundation ensures safe and pure drinking water for the residents of Vrindavan, addressing the issue of naturally salty water in the region. Through water purification and distribution efforts, we provide access to clean, healthy water, reflecting our commitment to compassion and selfless service.</p>
+              <a class="btn btn-marigold" href="#seva" data-give="health">Give to this seva</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ SEVA ============ -->
   <section class="sec seva" id="seva" aria-labelledby="seva-title">
     <div class="wrap">
@@ -113,13 +269,61 @@
         </div>
         <div class="seg" role="group" aria-label="Show sevas">
           <button type="button" class="seg-btn is-on" data-group="all" aria-pressed="true">All</button>
+          <button type="button" class="seg-btn" data-group="care" aria-pressed="false">Elders &amp; widows</button>
+          <button type="button" class="seg-btn" data-group="gau" aria-pressed="false">Gau seva</button>
           <button type="button" class="seg-btn" data-group="food" aria-pressed="false">Prasadam</button>
-          <button type="button" class="seg-btn" data-group="rations" aria-pressed="false">Ration kits</button>
-          <button type="button" class="seg-btn" data-group="care" aria-pressed="false">Health &amp; education</button>
+          <button type="button" class="seg-btn" data-group="health" aria-pressed="false">Medical &amp; water</button>
+          <button type="button" class="seg-btn" data-group="vraja" aria-pressed="false">Green &amp; relief</button>
         </div>
       </div>
 
       <div class="cards" id="cards">
+        <article class="seva-card" data-group="care" data-id="eldercare" data-name="A month of care for one elder" data-price="3100">
+          <div class="seva-img arch"><img src="img/widow-saffron.jpg" width="225" height="225" loading="lazy" alt="An elderly woman wrapped in a saffron shawl, raising her hands in joy" style="object-position:50% 35%"></div>
+          <span class="tag">Old age home</span>
+          <h3>A month of care for one elder</h3>
+          <p>Shelter, meals, medical attention and loving care for one resident.</p>
+          <div class="seva-foot"><span class="price">₹3,100</span><span class="stepper"></span></div>
+        </article>
+        <article class="seva-card" data-group="care" data-id="widowcare" data-name="A month of care for one widow" data-price="2100">
+          <div class="seva-img arch"><img src="img/card-widow.webp" width="720" height="720" loading="lazy" alt="An elderly widow in a white sari standing in an old wooden doorway" style="object-position:50% 60%"></div>
+          <span class="tag">Widow care</span>
+          <h3>A month of care for one widow</h3>
+          <p>Shelter, necessities and healthcare for a mother of Vrindavan.</p>
+          <div class="seva-foot"><span class="price">₹2,100</span><span class="stepper"></span></div>
+        </article>
+        <article class="seva-card" data-group="care" data-id="rehab" data-name="A month of care at the rehabilitation home" data-price="3100">
+          <div class="seva-img arch seva-art" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#rehab"/></svg></div>
+          <span class="tag">Rehabilitation home</span>
+          <h3>Care at the rehabilitation home</h3>
+          <p>A month of shelter and medical care for one resident: the blind, those with leprosy or mental disabilities.</p>
+          <div class="seva-foot"><span class="price">₹3,100</span><span class="stepper"></span></div>
+        </article>
+        <article class="seva-card" data-group="gau" data-id="fodder" data-name="Green fodder for one cow for a month" data-price="1100">
+          <div class="seva-img arch seva-art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><use href="#cow"/><path d="M14 90c1-9 4-14 9-17M20 90c0-10 2-15 6-19M26 90c1-8 3-12 7-14M87 90c-1-8-3-12-7-14M94 90c0-10-2-15-6-19M100 90c-1-9-4-14-9-17" fill="none" stroke="#2f5d46" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <span class="tag">Gau seva</span>
+          <h3>Green fodder for one cow</h3>
+          <p>A month of fresh green fodder, hay and jaggery for one cow.</p>
+          <div class="seva-foot"><span class="price">₹1,100</span><span class="stepper"></span></div>
+        </article>
+        <article class="seva-card" data-group="gau" data-id="cowcare" data-name="Medical care for a cow" data-price="2100">
+          <div class="seva-img arch seva-art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><use href="#cow"/><circle cx="94" cy="68" r="13" fill="#2f5d46"/><path d="M94 61v14m-7-7h14" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="tag">Gau seva</span>
+          <h3>Medical care for a cow</h3>
+          <p>Treatment for a sick, injured or street cow or bull.</p>
+          <div class="seva-foot"><span class="price">₹2,100</span><span class="stepper"></span></div>
+        </article>
+        <article class="seva-card" data-group="gau" data-id="goshala" data-name="A day of feeding at the goshala" data-price="5100">
+          <div class="seva-img arch"><img src="img/act-goseva.webp" width="1024" height="1024" loading="lazy" alt="Cows feeding under the shade of a goshala shed" style="object-position:30% 60%"></div>
+          <span class="tag">Gau seva</span>
+          <h3>A day at the goshala</h3>
+          <p>Fodder, grain and water for every cow at the goshala for one day.</p>
+          <div class="seva-foot"><span class="price">₹5,100</span><span class="stepper"></span></div>
+        </article>
         <article class="seva-card" data-group="food" data-id="meal1" data-name="Prasadam for one Vrajavāsī" data-price="101">
           <div class="seva-img arch"><img src="img/mother-child.webp" width="329" height="239" loading="lazy" alt="A smiling mother and daughter with a plate of khichdi" style="object-position:50% 40%"></div>
           <span class="tag">Prasadam</span>
@@ -143,47 +347,42 @@
           <p>Cooking, fuel and serving for a full day’s round.</p>
           <div class="seva-foot"><span class="price">₹11,000</span><span class="stepper"></span></div>
         </article>
-        <article class="seva-card" data-group="rations" data-id="kit1" data-name="Ration kit for one family" data-price="1500">
-          <div class="seva-img arch"><img src="img/ration-kit-900.jpg" width="900" height="894" loading="lazy" alt="A month's dry ration kit: atta, rice, dal, oil, spices, sugar, salt and soap"></div>
-          <span class="tag">Ration kit</span>
-          <h3>Ration kit for one family</h3>
-          <p>Atta, rice, dal, oil, spices, sugar, salt and soap for a month.</p>
+        <article class="seva-card" data-group="food" data-id="groceries" data-name="Monthly groceries for one family" data-price="1500">
+          <div class="seva-img arch"><img src="img/ration-kit-900.jpg" width="900" height="894" loading="lazy" alt="A month's groceries: atta, rice, dal, oil, spices, sugar, salt and soap"></div>
+          <span class="tag">Monthly groceries</span>
+          <h3>Groceries for one family</h3>
+          <p>A month of atta, rice, dal, oil and essentials for a family in need.</p>
           <div class="seva-foot"><span class="price">₹1,500</span><span class="stepper"></span></div>
         </article>
-        <article class="seva-card" data-group="rations" data-id="kit5" data-name="Ration kits for five families" data-price="7500">
-          <div class="seva-img arch"><img src="img/ration-table.jpg" width="1000" height="600" loading="lazy" alt="Rice, atta, dal and oil laid out to be packed into ration kits"></div>
-          <span class="tag">Ration kit</span>
-          <h3>Kits for five families</h3>
-          <p>Five households fed for a whole month.</p>
-          <div class="seva-foot"><span class="price">₹7,500</span><span class="stepper"></span></div>
-        </article>
-        <article class="seva-card" data-group="care" data-id="med1" data-name="Medicines for one elder" data-price="500">
-          <div class="seva-img arch"><img src="img/seva-medicines.jpg" width="1200" height="900" loading="lazy" alt="A doctor checking the blood pressure of an elderly widow in a white sari"><span class="rep">Representative image</span></div>
-          <span class="tag">Healthcare</span>
-          <h3>Medicines for one elder</h3>
-          <p>A month of medicines for a widow or elderly Vrajavāsī.</p>
+        <article class="seva-card" data-group="health" data-id="med1" data-name="Medicines and a check-up for one person" data-price="500">
+          <div class="seva-img arch"><img src="img/card-medical.webp" width="720" height="720" loading="lazy" alt="A doctor and nurse caring for an elderly man in a hospital bed"></div>
+          <span class="tag">Medical assistance</span>
+          <h3>Medicines and a check-up</h3>
+          <p>A health check-up and a month of essential medicines for one person.</p>
           <div class="seva-foot"><span class="price">₹500</span><span class="stepper"></span></div>
         </article>
-        <article class="seva-card" data-group="care" data-id="school" data-name="School kit for a child" data-price="750">
-          <div class="seva-img arch"><img src="img/seva-school.jpg" width="1200" height="900" loading="lazy" alt="A smiling schoolgirl opening a new school bag with notebooks and books"><span class="rep">Representative image</span></div>
-          <span class="tag">Education</span>
-          <h3>School kit for a child</h3>
-          <p>Bag, books, notebooks and stationery for the school year.</p>
-          <div class="seva-foot"><span class="price">₹750</span><span class="stepper"></span></div>
-        </article>
-        <article class="seva-card" data-group="care" data-id="water" data-name="Clean drinking water for a month" data-price="2100">
-          <div class="seva-img arch"><img src="img/water-kiosk.webp" width="1200" height="1600" loading="lazy" alt="A man filling a bottle at a clean drinking-water kiosk" style="object-position:50% 62%"></div>
-          <span class="tag">Daily support</span>
-          <h3>Clean water for a month</h3>
-          <p>Keeping a drinking-water point running and clean.</p>
+        <article class="seva-card" data-group="health" data-id="water" data-name="Safe drinking water for a month" data-price="2100">
+          <div class="seva-img arch"><img src="img/card-water.webp" width="720" height="720" loading="lazy" alt="Women filling water at the Sevayu drinking-water point" style="object-position:50% 60%"></div>
+          <span class="tag">Safe drinking water</span>
+          <h3>Safe water for a month</h3>
+          <p>Purifying and distributing clean water where the ground water is salty.</p>
           <div class="seva-foot"><span class="price">₹2,100</span><span class="stepper"></span></div>
         </article>
-        <article class="seva-card" data-group="care" data-id="blanket" data-name="Winter blankets for ten elders" data-price="3000">
-          <div class="seva-img arch"><img src="img/widow-saffron.jpg" width="225" height="225" loading="lazy" alt="An elderly woman wrapped in a saffron shawl, raising her hands in joy" style="object-position:50% 35%"></div>
-          <span class="tag">Daily support</span>
-          <h3>Winter blankets for ten</h3>
-          <p>Warm blankets for elders through the cold months in Vraja.</p>
-          <div class="seva-foot"><span class="price">₹3,000</span><span class="stepper"></span></div>
+        <article class="seva-card" data-group="vraja" data-id="tree" data-name="Plant and protect a tree in Vrindavan" data-price="501">
+          <div class="seva-img arch"><img src="img/card-tree.webp" width="608" height="608" loading="lazy" alt="A young tree planted with a guard beside a Vrindavan road"></div>
+          <span class="tag">Green Vrindavan</span>
+          <h3>Plant and protect a tree</h3>
+          <p>A sapling, a tree guard and a year of care in Vrindavan.</p>
+          <div class="seva-foot"><span class="price">₹501</span><span class="stepper"></span></div>
+        </article>
+        <article class="seva-card" data-group="vraja" data-id="relief" data-name="Relief kit for a family in a calamity" data-price="1500">
+          <div class="seva-img arch seva-art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><path d="M60 6c6 8 9 13 9 17a9 9 0 0 1-18 0c0-4 3-9 9-17z" fill="#2f5d46"/><rect x="30" y="44" width="60" height="38" rx="3" fill="#95560a"/><rect x="26" y="36" width="68" height="11" rx="3" fill="#e9a43a"/><rect x="54" y="36" width="12" height="46" fill="#7a1416" opacity=".6"/></svg>
+          </div>
+          <span class="tag">Calamity relief</span>
+          <h3>Relief kit for a family</h3>
+          <p>Food, water, clothing and blankets in a flood, heatwave or harsh winter.</p>
+          <div class="seva-foot"><span class="price">₹1,500</span><span class="stepper"></span></div>
         </article>
         <article class="seva-card seva-any" data-group="all" data-id="any" data-name="A seva of my choice">
           <div class="any-art" aria-hidden="true"><img src="favicon.svg" width="64" height="64" alt=""></div>
@@ -197,45 +396,6 @@
           </form>
         </article>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ IMPACT ============ -->
-  <section class="sec impact" id="impact" aria-labelledby="impact-title">
-    <div class="wrap impact-grid">
-      <div class="impact-text">
-        <h2 class="h2" id="impact-title">Our seva in <em>Vraja</em></h2>
-        <p class="lead">Sevayu Foundation is committed to serving the residents of Vraja through food, healthcare, education, and daily support. Each act of service to Vrajavāsīs is an offering to Śrī Kṛṣṇa, bringing joy and dignity to His sacred land.</p>
-        <ul class="pillars" role="list">
-          <li><span class="pillar-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0zm4-2c0-2 1-3 2-4m2 4c0-3 2-4 2-6m2 6c0-2 1-3 2-4"/></svg></span><div><h3>Food</h3><p>Prasadam from the food van and monthly ration kits for families.</p></div></li>
-          <li><span class="pillar-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span><div><h3>Healthcare</h3><p>Medicines and care for widows and elderly Vrajavāsīs.</p></div></li>
-          <li><span class="pillar-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h7a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H3zm18 0h-7a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h7z"/></svg></span><div><h3>Education</h3><p>School kits and support so children can keep learning.</p></div></li>
-          <li><span class="pillar-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></span><div><h3>Daily support</h3><p>Clean drinking water, blankets and help when it is needed.</p></div></li>
-        </ul>
-      </div>
-      <figure class="impact-photo">
-        <div class="arch arch-tall"><img src="img/widow-door.jpg" width="1230" height="820" loading="lazy" alt="An elderly Vrajavāsī widow in a white sari and tilak, standing in a green painted doorway" style="object-position:50% 30%"></div>
-        <figcaption>“Each act of service to Vrajavāsīs is an offering to Śrī Kṛṣṇa.”</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- ============ NON PROFIT ============ -->
-  <section class="sec nonprofit" id="nonprofit" aria-labelledby="np-title">
-    <div class="wrap">
-      <div class="np-head">
-        <h2 class="h2" id="np-title">Non <em>profit</em></h2>
-        <p class="lead">Sevayu Foundation is a non-profit, charitable organisation dedicated solely to the service of society. Every contribution received is directly utilised for welfare projects.</p>
-      </div>
-      <figure class="np-photo">
-        <img src="img/kund-1920.jpg" width="1920" height="1081" loading="lazy" alt="A red sandstone chhatri in the still water of a kund in Vraja">
-        <figcaption>The sacred land of Vraja, where every seva is offered</figcaption>
-      </figure>
-      <ul class="principles" role="list">
-        <li><strong>Transparency</strong><span>You know where your seva goes.</span></li>
-        <li><strong>Accountability</strong><span>Every rupee goes to welfare projects.</span></li>
-        <li><strong>Service</strong><span>The only purpose of the foundation.</span></li>
-      </ul>
     </div>
   </section>
 
@@ -268,15 +428,13 @@
       <div class="sec-head">
         <div>
           <h2 class="h2" id="pf-title">Portfolio of <em>seva</em></h2>
-          <p class="intro">Moments from our work among the Vrajavāsīs. Tap a photo to view it in full.</p>
+          <p class="intro">Moments from our work in Vrindavan Brajdham. Tap a photo to view it in full.</p>
         </div>
         <div class="seg" role="group" aria-label="Filter the portfolio">
           <button type="button" class="seg-btn chip is-on" data-filter="all" aria-pressed="true">All</button>
-          <button type="button" class="seg-btn chip" data-filter="food" aria-pressed="false">Food</button>
-          <button type="button" class="seg-btn chip" data-filter="rations" aria-pressed="false">Rations</button>
-          <button type="button" class="seg-btn chip" data-filter="water" aria-pressed="false">Water</button>
-          <button type="button" class="seg-btn chip" data-filter="elders" aria-pressed="false">Elders</button>
-          <button type="button" class="seg-btn chip" data-filter="vraja" aria-pressed="false">Vraja</button>
+          <button type="button" class="seg-btn chip" data-filter="elders" aria-pressed="false">Elders &amp; widows</button>
+          <button type="button" class="seg-btn chip" data-filter="food" aria-pressed="false">Prasadam</button>
+          <button type="button" class="seg-btn chip" data-filter="green" aria-pressed="false">Green Vrindavan</button>
         </div>
       </div>
       <ul class="pf-grid" id="pf-grid" role="list">
@@ -291,41 +449,33 @@
           <button class="pf-open" type="button" data-src="img/widow-door.jpg" data-caption="At her door in Vrindavan"><img src="img/widow-door.jpg" width="1230" height="820" loading="lazy" alt="A Vrajavāsī widow in a white sari and tilak standing in a green doorway"></button>
           <p class="pf-cap">At her door in Vrindavan</p>
         </li>
-        <li class="pf-tile" data-cat="rations">
-          <button class="pf-open" type="button" data-src="img/ration-kit-900.jpg" data-caption="A month of rations for a family"><img src="img/ration-kit-900.jpg" width="900" height="894" loading="lazy" alt="A family's month of dry rations laid out on the floor"></button>
-          <p class="pf-cap">A month of rations for a family</p>
-        </li>
-        <li class="pf-tile" data-cat="vraja">
-          <button class="pf-open" type="button" data-src="img/kund-1920.jpg" data-caption="A kund of Vraja"><img src="img/kund-640.jpg" width="640" height="360" loading="lazy" alt="A red sandstone chhatri in the still water of a kund in Vraja"></button>
-          <p class="pf-cap">A kund of Vraja</p>
-        </li>
-        <li class="pf-tile" data-cat="water">
-          <button class="pf-open" type="button" data-src="img/water-kiosk.webp" data-caption="Clean drinking water"><img src="img/water-kiosk.webp" width="1200" height="1600" loading="lazy" alt="A man filling a bottle at a clean drinking-water kiosk"></button>
-          <p class="pf-cap">Clean drinking water</p>
+        <li class="pf-tile" data-cat="green">
+          <button class="pf-open" type="button" data-src="img/pf-cleanup.webp" data-caption="A cleanliness drive on the riverbank"><img src="img/pf-cleanup.webp" width="1024" height="1024" loading="lazy" alt="Volunteers in Sevayu Foundation T-shirts collecting plastic waste on a riverbank"></button>
+          <p class="pf-cap">A cleanliness drive on the riverbank</p>
         </li>
         <li class="pf-tile" data-cat="elders">
-          <button class="pf-open" type="button" data-src="img/widows-group.jpg" data-caption="Tiffins for the day"><img src="img/widows-group.jpg" width="225" height="225" loading="lazy" alt="Widows of Vrindavan smiling with steel tiffins"></button>
-          <p class="pf-cap">Tiffins for the day</p>
+          <button class="pf-open" type="button" data-src="img/pf-widows-bhajan.webp" data-caption="Bhajans together"><img src="img/pf-widows-bhajan.webp" width="832" height="448" loading="lazy" alt="Widows in white saris singing bhajans around a clay drum"></button>
+          <p class="pf-cap">Bhajans together</p>
         </li>
         <li class="pf-tile" data-cat="food">
           <button class="pf-open" type="button" data-src="img/mother-child.webp" data-caption="A meal for mother and child"><img src="img/mother-child.webp" width="329" height="239" loading="lazy" alt="A smiling mother holding her daughter beside a pot of khichdi"></button>
           <p class="pf-cap">A meal for mother and child</p>
         </li>
-        <li class="pf-tile" data-cat="rations">
-          <button class="pf-open" type="button" data-src="img/ration-table.jpg" data-caption="Ready to pack"><img src="img/ration-table.jpg" width="1000" height="600" loading="lazy" alt="Rations laid out ready for packing"></button>
-          <p class="pf-cap">Ready to pack</p>
-        </li>
         <li class="pf-tile" data-cat="elders">
           <button class="pf-open" type="button" data-src="img/widow-saffron.jpg" data-caption="Joy at the kund"><img src="img/widow-saffron.jpg" width="225" height="225" loading="lazy" alt="An elderly woman in a saffron shawl raising her hands in joy"></button>
           <p class="pf-cap">Joy at the kund</p>
         </li>
+        <li class="pf-tile" data-cat="green">
+          <button class="pf-open" type="button" data-src="img/pf-litter.webp" data-caption="The streets we set out to clean"><img src="img/pf-litter.webp" width="608" height="608" loading="lazy" alt="Garbage piled along a market street in Vrindavan"></button>
+          <p class="pf-cap">The streets we set out to clean</p>
+        </li>
+        <li class="pf-tile" data-cat="food">
+          <button class="pf-open" type="button" data-src="img/widows-group.jpg" data-caption="Tiffins of prasadam for the day"><img src="img/widows-group.jpg" width="225" height="225" loading="lazy" alt="Widows of Vrindavan smiling with steel tiffins"></button>
+          <p class="pf-cap">Tiffins of prasadam for the day</p>
+        </li>
         <li class="pf-tile" data-cat="elders">
           <button class="pf-open" type="button" data-src="img/widow-white.jpg" data-caption="Morning prayers"><img src="img/widow-white.jpg" width="225" height="225" loading="lazy" alt="A widow in a white sari raising her arms in prayer by the water"></button>
           <p class="pf-cap">Morning prayers</p>
-        </li>
-        <li class="pf-tile" data-cat="vraja">
-          <button class="pf-open" type="button" data-src="img/ghat.jpg" data-caption="On the ghats of the Yamuna"><img src="img/ghat.jpg" width="225" height="225" loading="lazy" alt="Sadhus and pilgrims walking along a ghat on the Yamuna"></button>
-          <p class="pf-cap">On the ghats of the Yamuna</p>
         </li>
       </ul>
       <p class="pf-empty" id="pf-empty" hidden>Nothing in this group yet.</p>
@@ -350,11 +500,11 @@
         </details>
         <details>
           <summary>Where does my money go?</summary>
-          <p>Sevayu Foundation is a non-profit, charitable organisation. Every contribution received is directly utilised for welfare projects in Vraja: food, healthcare, education and daily support.</p>
+          <p>Sevayu Foundation is a non-profit, charitable organisation. Every contribution received is directly utilised for its welfare activities in Vrindavan Brajdham: the old age home, the rehabilitation home, widow care, gau seva, prasadam and monthly groceries, medical assistance, safe drinking water, a green and clean Vrindavan, and relief during calamities.</p>
         </details>
         <details>
           <summary>Can I give every month?</summary>
-          <p>Yes. Choose “Every month” on your plate of seva and we will remind you each month, so a family can count on rations or a child on school.</p>
+          <p>Yes. Choose “Every month” on your plate of seva and we will remind you each month, so an elder, a widow or a cow can count on your seva month after month.</p>
         </details>
         <details>
           <summary>Can I give in someone’s name?</summary>
@@ -366,7 +516,7 @@
         </details>
         <details>
           <summary>How can my company partner with you?</summary>
-          <p>We warmly invite corporate partners for CSR projects, from food vans to water points. Call or message us and we will share a proposal.</p>
+          <p>We warmly invite corporate partners for CSR projects, from the old age home and gau seva to safe drinking water and a green and clean Vrindavan. Call or message us and we will share a proposal.</p>
         </details>
       </div>
     </div>
@@ -384,21 +534,26 @@
       <button class="btn btn-marigold" type="button" data-open-plate>Give a seva</button>
     </div>
     <div class="foot-col">
-      <h3>Contact</h3>
+      <h3>Contact us</h3>
       <p>Radha Rasikraj Das</p>
       <p><a href="tel:+919323547108">+91 93235 47108</a></p>
       <p><a href="https://wa.me/919323547108" target="_blank" rel="noopener">WhatsApp</a></p>
-      <p>Vrindavan, Vraja, Uttar Pradesh</p>
+      <address class="foot-address">35, Prabhu Nagar,<br>Mathura 281 004,<br>Uttar Pradesh</address>
     </div>
     <div class="foot-col">
-      <h3>Explore</h3>
-      <p><a href="#appeal">Our appeal</a></p>
-      <p><a href="#seva">Give a seva</a></p>
-      <p><a href="#impact">Our seva in Vraja</a></p>
-      <p><a href="#portfolio">Portfolio</a></p>
+      <h3>Follow us</h3>
+      <p class="foot-handle">@SevayuFoundation</p>
+      <ul class="social" role="list">
+        <li><a href="https://www.facebook.com/SevayuFoundation" target="_blank" rel="noopener" aria-label="Sevayu Foundation on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5a.5.5 0 0 1 .5-.5z"/></svg></a></li>
+        <li><a href="https://www.youtube.com/@SevayuFoundation" target="_blank" rel="noopener" aria-label="Sevayu Foundation on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 0 0-1.8 1.8A26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a></li>
+        <li><a href="https://www.instagram.com/SevayuFoundation" target="_blank" rel="noopener" aria-label="Sevayu Foundation on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3zm4 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm5-3.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a></li>
+        <li><a href="https://twitter.com/SevayuFoundation" target="_blank" rel="noopener" aria-label="Sevayu Foundation on Twitter (X)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4.2l4.1 5.6L17.2 4h2.3l-6.1 7.1L20 20h-4.2l-4.5-6.1L6 20H3.7l6.5-7.5z"/></svg></a></li>
+      </ul>
+      <h3 class="foot-explore">Explore</h3>
+      <p><a href="#about">About us</a> · <a href="#activities">Activities</a> · <a href="#seva">Give a seva</a> · <a href="#portfolio">Portfolio</a></p>
     </div>
   </div>
-  <p class="wrap foot-base">© 2026 Sevayu Foundation · Photographs from the foundation’s seva in Vraja; images marked “representative” are illustrative.</p>
+  <p class="wrap foot-base">© 2026 Sevayu Foundation · Images marked “representative” are illustrative.</p>
 </footer>
 
 <!-- ============ THE PLATE OF SEVA (drawer) ============ -->

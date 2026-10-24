@@ -6,7 +6,7 @@
   const root = document.documentElement;
 
   // ---------- gentle entrance ----------
-  const reveals = document.querySelectorAll('.sec-head, .appeal-grid > *, .seva-card, .impact-text, .impact-photo, .np-head, .np-photo, .principles li, .giver, .q-side, .q-list');
+  const reveals = document.querySelectorAll('.sec-head, .appeal-grid > *, .seva-card, .about-grid > *, .np-photo, .principles li, .act-head, .act-layout, .giver, .q-side, .q-list');
   if ('IntersectionObserver' in window && !reduce) {
     reveals.forEach((el) => el.classList.add('reveal'));
     const io = new IntersectionObserver((entries) => {
@@ -38,6 +38,38 @@
       card.classList.remove('is-shown');
       if (on && !reduce) { void card.offsetWidth; card.classList.add('is-shown'); }
     });
+  }));
+
+  // ---------- activities: tabs (without script every activity stays on the page) ----------
+  const tabList = document.querySelector('.act-tabs');
+  const tabs = [...tabList.querySelectorAll('[role="tab"]')];
+  const panels = tabs.map((t) => document.getElementById(t.getAttribute('aria-controls')));
+  const pick = (i, focus) => {
+    tabs.forEach((t, j) => { t.setAttribute('aria-selected', i === j ? 'true' : 'false'); t.tabIndex = i === j ? 0 : -1; });
+    panels.forEach((p, j) => {
+      p.hidden = i !== j;
+      p.classList.remove('is-shown');
+      if (i === j && !reduce) { void p.offsetWidth; p.classList.add('is-shown'); }
+    });
+    if (focus) tabs[i].focus();
+    // phones: slide the row of tabs so the chosen one is in view, without moving the page
+    if (tabList.scrollWidth > tabList.clientWidth) tabList.scrollLeft += tabs[i].getBoundingClientRect().left - tabList.getBoundingClientRect().left - 16;
+  };
+  tabList.hidden = false;
+  tabs.forEach((t, i) => t.addEventListener('click', () => pick(i)));
+  tabList.addEventListener('keydown', (e) => {
+    const i = tabs.indexOf(document.activeElement);
+    const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+    if (i < 0) return;
+    if (step) { e.preventDefault(); pick((i + step + tabs.length) % tabs.length, true); }
+    if (e.key === 'Home') { e.preventDefault(); pick(0, true); }
+    if (e.key === 'End') { e.preventDefault(); pick(tabs.length - 1, true); }
+  });
+  pick(0);
+
+  // "Give to this seva" opens the seva list on that activity's group
+  document.querySelectorAll('[data-give]').forEach((a) => a.addEventListener('click', () => {
+    document.querySelector(`.seg-btn[data-group="${a.dataset.give}"]`)?.click();
   }));
 
   // ---------- the plate of seva ----------

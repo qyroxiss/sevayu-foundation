@@ -1,6 +1,6 @@
 # Sevayu Foundation
 
-Donation and portfolio website for Sevayu Foundation, which serves the residents of Vraja with food, healthcare, education and daily support.
+Donation and portfolio website for Sevayu Foundation, which serves Vrindavan Brajdham through its old age home, rehabilitation home, widow care, gau seva, prasadam distribution, medical assistance, safe drinking water, a green and clean Vrindavan and support during calamities.
 
 A static site: plain HTML, CSS and JavaScript, no build step.
 
